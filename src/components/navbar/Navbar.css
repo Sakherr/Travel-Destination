@@ -1,0 +1,67 @@
+/* Navbar.css */
+
+nav {
+    background-color: #297aca;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    padding: 5px;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 35px;
+    position: relative;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    color: #FFD700;
+  }
+  
+  nav ul li::before {
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+   
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #1E90FF;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li:hover::before {
+    opacity: 1;
+    top: calc(100% + 10px);
+  }
+  
+
+  .travel-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
